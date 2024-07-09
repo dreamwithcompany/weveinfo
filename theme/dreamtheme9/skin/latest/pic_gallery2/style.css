@@ -1,0 +1,268 @@
+@charset "utf-8";
+
+/* 새글 스킨 (latest) */
+.lat_head {
+  flex: 0 0 100%;
+  text-align: center;
+}
+.lat_head .lat_title {
+  display: block;
+  line-height: 45px;
+  font-size: 3em;
+}
+.lat_head .lat_title a {
+  color: #000;
+  display: inline-block;
+  position: relative;
+}
+.lat_head .lat_so_title {
+  font-size: 20px;
+  color: #7f7f7f;
+  padding: 20px 0 40px 0;
+  word-break: keep-all;
+}
+.lat_head button {
+  font-size: 36px;
+  background-color: #1eb38e;
+  padding: 7px 15px;
+  color: #fff;
+  margin-top: 100px;
+}
+
+.portfolio {
+  width: 100%;
+  overflow: hidden;
+}
+.portfolio .lt_more {
+  position: absolute;
+  top: 64px;
+  left: 0;
+  display: block;
+  width: 25px;
+  line-height: 25px;
+  color: #aaa;
+  border-radius: 3px;
+  text-align: center;
+}
+.portfolio .lt_more:hover {
+  color: #777;
+}
+.portfolio ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio ul:after {
+  display: block;
+  visibility: hidden;
+  clear: both;
+  content: "";
+}
+.portfolio li {
+  width: 25%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.portfolio li.galley_li:nth-child(4n + 1) {
+  clear: both !important;
+}
+.portfolio li .lt_img {
+  display: block;
+  box-shadow: 5px 5px 5px #ddd;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+.portfolio li .lt_img img,
+.portfolio li .lt_img video {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.portfolio li .lt_img:hover {
+  box-shadow: 10px 10px 10px #919191;
+  border: 1px solid #a4a4a4;
+}
+.portfolio li a:hover {
+  color: #0075b7;
+}
+.portfolio li .fa-heart {
+  color: #ff0000;
+}
+.portfolio li .fa-lock {
+  display: inline-block;
+  line-height: 14px;
+  width: 16px;
+  font-size: 0.833em;
+  color: #4f818c;
+  background: #cbe3e8;
+  text-align: center;
+  border-radius: 2px;
+  font-size: 12px;
+  border: 1px solid #cbe3e8;
+  vertical-align: middle;
+}
+.portfolio li .new_icon {
+  display: inline-block;
+  width: 16px;
+  line-height: 16px;
+  font-size: 0.833em;
+  color: #23db79;
+  background: #b9ffda;
+  text-align: center;
+  border-radius: 2px;
+  margin-left: 2px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.portfolio li .hot_icon {
+  display: inline-block;
+  width: 16px;
+  line-height: 16px;
+  font-size: 0.833em;
+  color: #ff0000;
+  background: #ffb9b9;
+  text-align: center;
+  border-radius: 2px;
+  vertical-align: middle;
+}
+.portfolio li .fa-caret-right {
+  color: #bbb;
+}
+.portfolio li .fa-download {
+  display: inline-block;
+  width: 16px;
+  line-height: 16px;
+  font-size: 0.833em;
+  color: #daae37;
+  background: #ffefb9;
+  text-align: center;
+  border-radius: 2px;
+  vertical-align: middle;
+}
+.portfolio li .fa-link {
+  display: inline-block;
+  width: 16px;
+  line-height: 16px;
+  font-size: 0.833em;
+  color: #b451fd;
+  background: #edd3fd;
+  text-align: center;
+  border-radius: 2px;
+  vertical-align: middle;
+}
+
+.portfolio .profile_img img {
+  border-radius: 50%;
+}
+
+.lt_info {
+  margin-top: 20px;
+  /* background-color: #fff; */
+  background-color: #f1f1f1;
+  height: 120px;
+  text-align: center;
+}
+.lt_info .lt_sub {
+  font-size: 22px;
+  font-weight: 500;
+  height: 36px;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.lt_info .lt_con {
+  color: #888;
+  font-size: 16px;
+  padding-top: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.lt_info .lt_nick {
+  color: #888;
+}
+.lt_info .lt_date {
+  color: #888;
+}
+
+.portfolio .empty_li {
+  line-height: 145px;
+  color: #666;
+  text-align: center;
+  padding: 0;
+}
+.portfolio .empty_li:before {
+  background: none;
+  padding: 0;
+}
+
+.portfolio .lt_cmt {
+  background: #e9eff5;
+  color: #3a8afd;
+  font-size: 11px;
+  height: 16px;
+  line-height: 16px;
+  padding: 0 5px;
+  border-radius: 3px;
+  vertical-align: middle;
+}
+.portfolio .lt_more {
+  position: absolute;
+  top: 11px;
+  right: 0;
+  display: block;
+  width: 40px;
+  line-height: 25px;
+  color: #3a8afd;
+  border-radius: 3px;
+  text-align: center;
+}
+.portfolio .lt_more:hover {
+  color: #777;
+}
+
+@media screen and (max-width: 1024px) {
+  .portfolio li {
+    width: 33.33333%;
+  }
+  .lt_info {
+    height: 90px;
+  }
+  .lt_info .lt_sub {
+    font-size: 18px;
+    height: 24px;
+  }
+  .lt_info .lt_con {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio li {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .lat_head .lat_title {
+    font-size: 2.2em;
+  }
+  .lat_head .lat_so_title {
+    font-size: 18px;
+    padding: 20px 0 30px;
+  }
+  .portfolio li {
+    padding: 5px;
+  }
+  .lt_info {
+    height: 60px;
+  }
+  .lt_info .lt_sub {
+    font-size: 14px;
+    height: 16px;
+  }
+  .lt_info .lt_con {
+    font-size: 12px;
+  }
+}

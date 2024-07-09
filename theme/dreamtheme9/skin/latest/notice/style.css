@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+/* 새글 스킨 (latest) */
+.notice {
+  position: relative;
+  border-radius: 10px;
+}
+.notice h2 {
+  margin-bottom: 20px;
+}
+.notice h2 a {
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.notice ul {
+  /* padding-top: 20px; */
+}
+.notice li {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 20px 0;
+  border-bottom: 1px solid #eaeaea;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+.notice li:hover {
+  background: #ebebeb;
+}
+.notice li img {
+  margin-right: 20px;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+.notice li .datetime {
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 28px;
+}
+.notice li .datetime strong {
+  width: 100%;
+  font-size: 30px;
+  font-weight: 800;
+  color: #2b9bdf;
+}
+.notice li .datetime small {
+  width: 100%;
+  color: #a5a5a5;
+  font-size: 14px;
+}
+.notice li .txt {
+  width: 75%;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 28px;
+}
+.notice li .plus {
+  width: 5%;
+}
+.notice li .plus i {
+  font-size: 20px;
+  color: #eaeaea;
+}
+.notice li:hover .plus i {
+  color: #333;
+}
+.notice li .txt strong {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.notice li.empty_li {
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+.notice li .txt small {
+  width: 100%;
+  color: #777;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.notice li .lock_icon {
+  display: inline-block;
+  line-height: 14px;
+  width: 16px;
+  font-size: 0.833em;
+  color: #4f818c;
+  background: #cbe3e8;
+  text-align: center;
+  border-radius: 2px;
+  font-size: 12px;
+  border: 1px solid #a2c6ce;
+  vertical-align: baseline;
+}
+.notice li .new_icon {
+  display: inline-block;
+  line-height: 16px;
+  width: 16px;
+  font-size: 0.833em;
+  color: #ffff;
+  background: #35b4eb;
+  text-align: center;
+  margin-right: 3px;
+  border-radius: 2px;
+  vertical-align: baseline;
+}
+.notice .cnt_cm {
+  background: #5c85c1;
+  color: #fff;
+  font-size: 11px;
+  height: 16px;
+  line-height: 16px;
+  padding: 0 5px;
+  border-radius: 3px;
+  white-space: nowrap;
+  margin-left: 5px;
+}
+.notice li.empty_li {
+  border-bottom: 0;
+  line-height: 120px;
+}
+
+@media screen and (max-width: 1300px) {
+  .notice li small {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .notice li .datetime {
+    width: 25%;
+  }
+  .notice li .txt {
+    width: 60%;
+  }
+  .notice li small {
+    font-size: 12px;
+  }
+  .notice li .plus {
+    width: 15%;
+  }
+}
