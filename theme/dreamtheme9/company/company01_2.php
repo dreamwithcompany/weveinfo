@@ -8,7 +8,7 @@
 			<div class="intro_container2">
 				<div class="intro_tit">
 						<h2>Wevwinfo<span class="color_primary"> </span></h2>
-						<p>우리함께 나누자는 의미의 IT기업<span class="color_primary"> </span></p>
+						<p><span class="color_primary"> </span></p>
 				</div>
 				<div class="intro_content">
 						<img class="intro_img mr50 wow fadeInLeft" src="<?php echo G5_THEME_IMG_URL?>/company1/intro2_1_img.png" alt="">

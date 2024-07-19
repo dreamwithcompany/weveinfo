@@ -31,7 +31,7 @@
                         </tr>
                         <tr>
                             <th>이메일</th>
-                            <td>weve01@weveinfo.com</td>
+                            <td>redsun@weveinfo.com</td>
                         </tr>
                         </tbody>
                     </table>
@@ -58,7 +58,7 @@
                         </tr>
                         <tr>
                             <th>이메일</th>
-                            <td>weve01@weveinfo.com</td>
+                            <td>redsun@weveinfo.com</td>
                         </tr>
                         </tbody>
                     </table>

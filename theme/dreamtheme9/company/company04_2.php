@@ -48,7 +48,7 @@
                         <p class="bar_count">2022</p>
                         <ul>
                             <li><strong></strong> 동아오츠카 외 26개 업체 프로젝트 계약 및 구축</li>
-                            <li><strong></strong> 이미지 암호화 장치 및 그것의 이미지 암호화 방법 특허 취득</li>
+                            <li><strong></strong> 이미지 암호화 장치 및 이미지 암호화 방법 특허 취득</li>
                         </ul>
                     </div>
                 </div>

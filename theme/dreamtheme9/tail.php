@@ -44,7 +44,7 @@ if(G5_COMMUNITY_USE === false) {
                 <li>사업자등록번호 : 119-86-27476</li><br>
                 <li>TEL : 02-857-5655</li>
                 <li>FAX : 02-857-5654</li>
-                <li>E-MAIL : <a href="mailto:weve01@weveinfo.com">weve01@weveinfo.com</a></li>
+                <li>E-MAIL : <a href="mailto:redsun@weveinfo.com">redsun@weveinfo.com</a></li>
             </ul>
             <p class="ft_copy">Copyright (C) 2024 WEVEINFO. All rights reserved. Designed By DreamWithCompany.</p>
         </div>

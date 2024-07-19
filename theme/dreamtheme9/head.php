@@ -103,7 +103,7 @@ include_once(G5_THEME_PATH.'/dreammenu.php');
             <div class="menu_open">
                 <div class="site_map_wrap head_width">
                 <h2>
-                    <img src="<?php echo G5_THEME_IMG_URL ?>/logo.svg" alt="">
+                    <img src="<?php echo G5_THEME_IMG_URL ?>/logo.png" alt="">
                     <a href="#" class="menu_bar menu_bar2">
                     <span></span>
                     <span></span>

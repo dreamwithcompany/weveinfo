@@ -71,6 +71,7 @@
   box-shadow: 5px 5px 5px #ddd;
   border-radius: 5px;
   transition: all 0.5s ease;
+  background: #fff;
 }
 .portfolio li .lt_img img,
 .portfolio li .lt_img video {
