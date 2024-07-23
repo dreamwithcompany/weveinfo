@@ -10,8 +10,8 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
 ?>
 
 <div class="swiper-navigation-por">
-    <h2 class="lat_title">주요 구축사례</h2>
-    <p class="lat_so_title">위브정보기술 주요 구축사례 입니다.</p>
+    <h2 class="lat_title">사업분야</h2>
+    <p class="lat_so_title">위브정보기술 사업분야 입니다.</p>
     <!-- <button class="por-prev"><i class="fa-solid fa-chevron-left"></i></button>
     <button class="por-next"><i class="fa-solid fa-chevron-right"></i></button> -->
     <!--<a href="<?php echo get_pretty_url($bo_table); ?>" class="lt_more"><span class="sound_only"><?php echo $bo_subject ?></span>더보기</a>-->

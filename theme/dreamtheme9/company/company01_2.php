@@ -7,7 +7,7 @@
     <section class="intro_wrap2">
 			<div class="intro_container2">
 				<div class="intro_tit">
-						<h2>Wevwinfo<span class="color_primary"> </span></h2>
+						<h2>  <span class="color_primary"> </span></h2>
 						<p><span class="color_primary"> </span></p>
 				</div>
 				<div class="intro_content">
