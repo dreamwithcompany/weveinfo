@@ -257,6 +257,18 @@ if ($w == '' || $w == 'r') {
         $wr_num = 0;
         $wr_reply = '';
     }
+
+    // 온라인 폼메일 체크박스 문자열로 저장
+    if($bo_table == "online"){
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            if ( isset($_POST['chk1_opt']) ) {
+                $_POST['chk1_opt'] = implode(',',$_POST['chk1_opt']);
+                $wr_3 = $_POST['chk1_opt'];
+            } else {
+                $wr_3 = "";
+            }
+        }
+    }
     
     // wr_num 서브쿼리 kkigomi 님 제안
     $sql = " insert into $write_table
@@ -750,12 +762,22 @@ if (!($w == 'u' || $w == 'cu') && $config['cf_email_use'] && $board['bo_use_emai
 @include_once($board_skin_path.'/write_update.tail.skin.php');
 
 delete_cache_latest($bo_table);
+delete_cache_latest($gr_id);
 
-$redirect_url = run_replace('write_update_move_url', short_url_clean(G5_HTTP_BBS_URL.'/board.php?bo_table='.$bo_table.'&amp;wr_id='.$wr_id.$qstr), $board, $wr_id, $w, $qstr, $file_upload_msg);
+// 온라인 폼메일 redirect_url 변경
+if($bo_table == "online"){
+    $redirect_url = run_replace('write_update_move_url', short_url_clean(G5_HTTP_BBS_URL.'/write.php?bo_table=online'), $board, $wr_id, $w, $qstr, $file_upload_msg);
+}else {
+    $redirect_url = run_replace('write_update_move_url', short_url_clean(G5_HTTP_BBS_URL.'/board.php?bo_table='.$bo_table.'&amp;wr_id='.$wr_id.$qstr), $board, $wr_id, $w, $qstr, $file_upload_msg);
+}
 
 run_event('write_update_after', $board, $wr_id, $w, $qstr, $redirect_url);
 
-if ($file_upload_msg)
+if ($file_upload_msg){
     alert($file_upload_msg, $redirect_url);
-else
+}else if($bo_table == "online") {
+    // 온라인 폼메일 알림창 추가
+    alert("문의가 접수되었습니다. 빠른 시일내에 답변 드리겠습니다.", $redirect_url);
+}else{
     goto_url($redirect_url);
+}

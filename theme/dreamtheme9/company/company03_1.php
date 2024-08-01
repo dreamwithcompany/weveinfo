@@ -23,7 +23,7 @@
                     <i class="fa fa-angle-down fs20" aria-hidden="true"></i>
                     <div class="txt mt20">
                         <p class="fs16">
-                            목표 달성과 가치 창출을 위해 새로운 아이디어를 발굴하고 적극적인 미션 수행을 위해 노력을 경주합니다.
+                            목표 달성과 가치 창출을 위해 새로운 아이디어를 발굴하고 적극적인 미션 수행을 위해 노력합니다.
                         </p>
                     </div>
                 </div>

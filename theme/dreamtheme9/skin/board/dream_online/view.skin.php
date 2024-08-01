@@ -93,18 +93,18 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
             <label for="wr_1">연락처</label>
             <input type="text" name="wr_1" value="<?php echo $view['wr_1'] ?>" id="wr_1" required readonly class="frm_input half_input required ">
         </div>
-        <div class="form_online">
+        <!-- <div class="form_online">
             <label for="wr_2">옵션선택1</label>
             <input type="text" name="wr_2" value="<?php echo $view['wr_2'] ?>" id="wr_2" required readonly class="frm_input half_input required ">
-        </div>
+        </div> -->
         <div class="form_online">
-            <label for="wr_3">옵션선택2</label>
+            <label for="wr_3">분류</label>
             <input type="text" name="chk1_opt[]" value="<?php echo $view['wr_3'] ?>" id="wr_3" required readonly class="frm_input half_input required ">
         </div>
-        <div class="form_online">
+        <!-- <div class="form_online">
             <label for="wr_4">옵션선택3</label>
             <input type="text" name="wr_4" value="<?php echo $view['wr_4'] ?>" id="wr_4" required readonly class="frm_input half_input required ">
-        </div>
+        </div> -->
         <div class="form_online">
             <label for="wr_subject">문의제목</label>
             <input type="text" name="wr_subject" value="<?php echo $view['wr_subject'] ?>" id="wr_subject" required readonly class="frm_input full_input required" size="50" maxlength="255">

@@ -82,7 +82,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
         <label for="wr_1">연락처</label>
         <input type="text" name="wr_1" value="<?php echo $wr_1 ?>" id="wr_1" required class="frm_input half_input required ">
     </div>
-    <div class="form_online">
+    <!-- <div class="form_online">
         <label for="wr_2">옵션선택1</label>
         <select id="wr_2" name="wr_2">
             <option value="옵션1">옵션1</option>
@@ -91,31 +91,34 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
             <option value="옵션4">옵션4</option>
             <option value="옵션5">옵션5</option>
         </select>
-    </div>
+    </div> -->
     <div class="form_online">
         <div class="form_chk_th">
-            옵션선택2
+            분류
         </div>
         <div class="form_chk_tb">
-            <input type="checkbox" name="chk1_opt[]" value="옵션1" id="form_chk1">
-            <label for="form_chk1">옵션1</label>
+            <input type="checkbox" name="chk1_opt[]" value="전자구매포탈시스템" id="form_chk1">
+            <label for="form_chk1">전자구매포탈시스템</label>
             <div class="view"></div>
-            <input type="checkbox" name="chk1_opt[]" value="옵션2" id="form_chk2">
-            <label for="form_chk2">옵션2</label>
+            <input type="checkbox" name="chk1_opt[]" value="프로젝트형ERP" id="form_chk2">
+            <label for="form_chk2">프로젝트형ERP</label>
             <div class="view"></div>
-            <input type="checkbox" name="chk1_opt[]" value="옵션3" id="form_chk3">
-            <label for="form_chk3">옵션3</label>
+            <input type="checkbox" name="chk1_opt[]" value="선박종합서비스시스템" id="form_chk3">
+            <label for="form_chk3">선박종합서비스시스템</label>
             <div class="view"></div>
-            <input type="checkbox" name="chk1_opt[]" value="옵션4" id="form_chk4">
-            <label for="form_chk4">옵션4</label>
+            <input type="checkbox" name="chk1_opt[]" value="웹수발주시스템" id="form_chk4">
+            <label for="form_chk4">웹수발주시스템</label>
             <div class="view"></div>
-            <input type="checkbox" name="chk1_opt[]" value="옵션5" id="form_chk5">
-            <label for="form_chk5">옵션5</label>
+            <input type="checkbox" name="chk1_opt[]" value="광고정산시스템" id="form_chk5">
+            <label for="form_chk5">광고정산시스템</label>
+            <div class="view"></div>
+            <input type="checkbox" name="chk1_opt[]" value="기타 SI 구축" id="form_chk1">
+            <label for="form_chk1">기타 SI 구축</label>
             <div class="view"></div>
             <span>( 복수선택 가능 )</span>
         </div>
     </div>
-    <div class="form_online">
+    <!-- <div class="form_online">
         <div class="form_rad_th">
             옵션선택3
         </div>
@@ -135,7 +138,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
             <input type="radio" name="wr_4" id="form_rad5" value="옵션5" required class="required">
             <label for="form_rad5">옵션5</label>
         </div>
-    </div>
+    </div> -->
     <div class="form_online">
         <label for="wr_subject">문의제목</label>
         <input type="text" name="wr_subject" value="<?php echo $subject ?>" id="wr_subject" required class="frm_input full_input required" size="50" maxlength="255">
