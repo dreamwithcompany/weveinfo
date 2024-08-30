@@ -106,7 +106,7 @@ if(!defined('G5_IS_ADMIN'))
 <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
 <script type="text/javascript" src="<?php echo G5_THEME_URL ?>/js/menu.js"></script>
 
-
+<link rel="shortcut icon" href="<?php echo G5_THEME_IMG_URL?>/favicon.ico" type="image/x-ico">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">

@@ -168,11 +168,13 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                     </div> 
                 </div>
             </div>
-            <div class="plus_btn">
-                <p class="fs20 mr10 color_dark">자세히 보기</p>
-                <i class="fa fa-angle-down"></i>
-            </div>
-            <div class="bo_tb_box">
+            <a href="<?php echo $list[$i]['href'] ?>" target="_self">
+                <div class="plus_btn">
+                    <p class="fs20 mr10 color_dark">자세히 보기</p>                    
+                    <!-- <i class="fa fa-angle-down"></i> -->
+                </div>
+            </a>
+            <!-- <div class="bo_tb_box">
                 <table class="bo_tb2">
                     <?php if(isset($list[$i]['wr_1']) && $list[$i]['wr_1']){ ?>
                     <tr>
@@ -205,7 +207,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                     </tr>
                     <?php } ?>
                 </table>
-            </div>
+            </div> -->
         </li>
         <?php } ?>
         <?php if (count($list) == 0) { echo "<li class=\"empty_list\">게시물이 없습니다.</li>"; } ?>
